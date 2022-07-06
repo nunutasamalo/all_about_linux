@@ -1,0 +1,14 @@
+# adduser example_user
+passwd example_user   
+# usermod -aG wheel example_user
+
+# visudo
+
+Look for the wheel group. Remove the comment if the line is disabled. It should look like this when you are ready to save the file.
+
+## Allows people in group wheel to run all commands
+%wheel  ALL=(ALL)       ALL
+
+
+Test:
+# su - example_user
