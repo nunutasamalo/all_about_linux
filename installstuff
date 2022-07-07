@@ -1,1 +1,5 @@
 yum -y install net-tools
+
+yum provides /usr/sbin/semanage
+
+yum install (policycoreutils-python-utils) (what available)
